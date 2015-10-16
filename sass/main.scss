@@ -1,0 +1,118 @@
+
+/*-- VARIABLES & THINGS THAT CAN BE INSTALLED --*/
+
+
+/*-- FONTS & IMPORTS --*/
+@font-face {
+	font-family: 'Hack';
+	src: url('../fonts/Hackney.otf');
+}
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,900,300);
+
+/*-- GENERAL STYLES --*/
+
+html {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	
+}
+
+body {
+	
+	background: url('../images/BG.jpg') no-repeat fixed;
+	background-size: cover;
+	font-family: 'Lato', sans-serif;
+}
+
+/*-- WAVES --*/
+
+.waves-button {
+	background-color: rgba(255,255,255, 0.8);
+	&:hover {
+		background-color: rgba(255,255,255, 0.8);
+	}
+}
+
+/*-- HEADER --*/
+
+header {
+	margin: 220px auto;
+
+	h1 {
+		color: #FFF;
+		font-family: 'Hack';
+	}
+
+	form {
+		margin: 1px auto;
+
+		.form-control {
+			border: 1px solid #000;
+			border-radius: 5px;		
+		}
+		
+		.btn-screen {
+			margin-left: 10px;
+		}
+	}
+}
+
+
+/*-- WEATHER --*/
+
+#weather {
+	background: #1E2023;
+	color: #FFF;
+	height: 70%;
+	margin-top: 40px;
+	padding: 35px 25px 35px;
+	border-radius: 20px;
+
+	#cityName {
+		margin-bottom: 69px;
+
+		span {
+			font-weight: 900;
+		}
+	}
+
+	#statistics {
+		p {
+			line-height: 2;
+			font-weight: 900;
+		}
+		span {
+			font-weight: 300;
+		}
+	}	
+}
+
+/*-- FOOTER --*/
+
+
+
+
+
+/*-- SPECIALS --*/
+
+
+
+
+/*-- MEDIA QUERIES --*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+	header {
+		margin: 10px 0;
+	}
+
+	#weather {
+		margin: 10px;
+		padding: 25px;
+	}
+}
+

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Good Weather</title>
+
+		<!-- Bootstrap CSS -->
+		<link href="http://bootswatch.com/yeti/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="waves/waves.css">
+		<link rel="stylesheet" href="css/main.css">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<header class="container">
+			<h1 class="text-center">Good Weather</h1>
+			<form class="form-horizontal col-md-offset-4">
+				<div class="form-group col-md-6">
+					<input type="text" class="form-control" id="weatherSearch" placeholder="Please type a city and country" required>
+				</div>
+				<button class="btn btn-default hidden-xs btn-screen" type="submit">Submit</button>
+				<button class="btn btn-default btn-block hidden-lg btn-phone" type="submit">Submit</button>
+			</form>
+		</header>
+		<section id="weather" class="container">
+			<h4 class="text-center" id="cityName">The weather in <span></span> is:</h4>			
+			<div class="row">
+
+				<div class="col-md-6" id="statistics">					
+					<p id="cityTemp">Temperature: <span id="Celcius"></span>  <span>/</span>  <span id="Faren"></span></p>
+					<p id="cityFeelLike">Feels like: <span id="FeelsLikeC"></span> <span>/</span> <span id="FeelslikeF"></span></p>
+					<p id="humidity">Humidity: <span></span></p>
+					<p id="localTime">Local time: <span id="time"></span></p>
+					<p id="sunRise">Sunrise: <span></span></p>
+					<p id="utc">UTC: <span></span></p>
+					<p id="sunSet">Sunset: <span></span></p>
+				</div>
+				<div class="col-md-6 text-center">
+					<div id="weatherImage">
+						
+					</div>					
+					<p class="text-center lead" id="weatherDesciption"></p>
+				</div>
+			</div>
+		</section>
+		<!-- jQuery -->
+		<script src="//code.jquery.com/jquery.js"></script>
+		<!-- Bootstrap JavaScript -->
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="js/weather.js"></script>
+		<script src="js/master.js"></script>
+
+		
+		
+		<script src="waves/waves.min.js"></script>
+		<script>
+			Waves.init();
+			Waves.attach('button', ['waves-button', 'waves-float']);
+		</script>
+	</body>
+</html>
