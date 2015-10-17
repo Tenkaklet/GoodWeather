@@ -109,6 +109,9 @@ and (max-device-width : 480px) {
 	header {
 		margin: 10px 0;
 	}
+	.btn-screen {
+		display: none;
+	}
 
 	#weather {
 		margin: 10px;
