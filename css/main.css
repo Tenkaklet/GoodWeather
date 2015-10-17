@@ -67,3 +67,11 @@ header {
   #weather {
     margin: 10px;
     padding: 25px; } }
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .btn-screen {
+    display: none; } }
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  header {
+    margin: 0; } }
