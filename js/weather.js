@@ -4,7 +4,7 @@ $(function() {
 		event.preventDefault();		
 
 		var searchTerm = $('#weatherSearch').val();		
-		console.log(searchTerm);
+		
 
 		var weatherAPI = 'http://api.worldweatheronline.com/free/v2/weather.ashx?';
 
@@ -42,9 +42,6 @@ $(function() {
 				//Sunset
 				var sunset = data.data.weather[0].astronomy[0].sunset;
 				/*-- Actions taken--*/
-				console.log(value);
-				// console.log(value.weather[0].date);
-				// console.log(value.weather[1].date);
 				
 				//City Temperature in Celcius
 				$('#cityTemp #Celcius').html(cityTempC + 'C' + '&deg;');
