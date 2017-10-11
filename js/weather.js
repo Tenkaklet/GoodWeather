@@ -14,7 +14,7 @@ $(function() {
 			num_of_days: 5,
 			showlocaltime: 'yes',
 			extra: 'utcDayTime',
-			key: '2b0e6614fcb44bb0ac4184902160707'
+			key: '5df6b262320c4a4499c183916162908'
 		};
 		function findWeather (data) {
 			$.each(data, function (index, value) {
